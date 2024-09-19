@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { InteractiveDemos } from './components/demo';  // Updated import for Interactive Demos
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';
+import { Skills } from './components/skills';
+import Experience from './components/Experience';
+import Projects from './components/projects/Projects';
+import Education from './components/Education';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-100 text-gray-800">
+      <Header />
+      <main className="py-10">
+        <AboutMe />
+        <Skills />
+        <Experience />
+        <InteractiveDemos />  {/* Using modularized Interactive Demos */}
+        <Projects />
+        <Education />
+      </main>
+      <Footer />
     </div>
   );
 }
