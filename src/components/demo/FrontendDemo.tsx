@@ -2,9 +2,9 @@ import React from 'react';
 
 const FrontendDemo = () => {
   return (
-    <div className="demo-section mb-8">
-      <h3 className="text-2xl font-semibold mb-2">Frontend Development</h3>
-      <div className="border mt-4 p-4">[Frontend Demo Placeholder]</div>
+    <div className="custom-demo">
+      <h3 className="text-xl font-bold">Frontend Development Demo</h3>
+      <div className="p-4 bg-gray-100 rounded-lg">[Frontend Demo Placeholder]</div>
     </div>
   );
 };

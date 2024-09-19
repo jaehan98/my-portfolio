@@ -5,9 +5,9 @@ import D3Visualization from './D3Visualization';
 
 const InteractiveDemos = () => {
   return (
-    <section className="mt-10 text-center">
-      <h2 className="text-3xl font-bold mb-4">Interactive Demos</h2>
-      <div className="max-w-4xl mx-auto">
+    <section id="demos" className="container mx-auto py-10 px-4">
+      <h2 className="custom-heading">Interactive Demos</h2>
+      <div className="space-y-8">
         <FrontendDemo />
         <BackendDemo />
         <D3Visualization />

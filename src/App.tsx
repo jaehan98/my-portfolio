@@ -1,28 +1,29 @@
 import React from 'react';
-import { InteractiveDemos } from './components/demo';  // Updated import for Interactive Demos
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
-import { Skills } from './components/skills';
-import Experience from './components/Experience';
+import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
+// import { InteractiveDemos } from './components/demo';
 import Education from './components/Education';
 import Footer from './components/Footer';
+import './global.css';
+import { Experience } from './components';
 
-function App() {
+const App = () => {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800">
+    <div className="min-h-screen bg-gray-100 text-gray-900">
       <Header />
-      <main className="py-10">
+      <main>
         <AboutMe />
-        <Skills />
-        <Experience />
-        <InteractiveDemos />  {/* Using modularized Interactive Demos */}
         <Projects />
+        <Skills />
+        {/* <InteractiveDemos /> */}
+        <Experience></Experience>
         <Education />
       </main>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

@@ -2,10 +2,12 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <header className="bg-blue-600 text-white py-6 text-center">
-      <h1 className="text-4xl font-bold">Jaehan Loh's Portfolio</h1>
-      <p className="text-lg mt-2">Full Stack Engineer | Frontend Specialist</p>
-    </header>
+    <section id="about" className="container mx-auto py-10 px-4">
+      <h2 className="custom-heading">About Me</h2>
+      <p className="custom-paragraph">
+        Hi, I'm Jaehan, a full-stack engineer focused on front-end development. I enjoy building intuitive and accessible web applications with React, TypeScript, and JavaScript.
+      </p>
+    </section>
   );
 };
 
