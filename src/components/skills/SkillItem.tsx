@@ -8,8 +8,8 @@ interface SkillItemProps {
 const SkillItem: React.FC<SkillItemProps> = ({ name, icon }) => {
   return (
     <div className="skill-item p-4 hover:bg-gray-200 rounded-lg flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-110">
-      <div className="icon-container mb-2">
-        {icon}  {/* Icon */}
+      <div className="mb-2">
+        {icon}  {/* Icon will keep its original color */}
       </div>
       <p className="text-lg font-medium">{name}</p>
     </div>

@@ -4,13 +4,13 @@ import { FaJava, FaReact, FaDatabase, FaJs, FaCss3Alt, FaAngular } from 'react-i
 import { SiTypescript, SiHtml5 } from 'react-icons/si';
 
 const skillsData = [
-  { name: 'Java', icon: <FaJava className="text-6xl text-red-600" /> },  // Larger icons for visual effect
-  { name: 'React', icon: <FaReact className="text-6xl text-blue-500" /> },
-  { name: 'SQL', icon: <FaDatabase className="text-6xl text-gray-600" /> },
-  { name: 'JavaScript', icon: <FaJs className="text-6xl text-yellow-400" /> },
-  { name: 'TypeScript', icon: <SiTypescript className="text-6xl text-blue-600" /> },
-  { name: 'CSS/HTML', icon: <FaCss3Alt className="text-6xl text-blue-700" />, extra: <SiHtml5 className="text-6xl text-orange-500" /> },
-  { name: 'Angular', icon: <FaAngular className="text-6xl text-red-600" /> }
+  { name: 'Java', icon: <FaJava className="text-6xl" style={{ color: '#007396' }} /> },  // Java - Blue-green
+  { name: 'React', icon: <FaReact className="text-6xl" style={{ color: '#61DBFB' }} /> },  // React - Light blue
+  { name: 'SQL', icon: <FaDatabase className="text-6xl" style={{ color: '#336791' }} /> },  // SQL - Blue-gray
+  { name: 'JavaScript', icon: <FaJs className="text-6xl" style={{ color: '#F7DF1E' }} /> },  // JavaScript - Yellow
+  { name: 'TypeScript', icon: <SiTypescript className="text-6xl" style={{ color: '#3178C6' }} /> },  // TypeScript - Blue
+  { name: 'CSS/HTML', icon: <FaCss3Alt className="text-6xl" style={{ color: '#1572B6' }} />, extra: <SiHtml5 className="text-6xl" style={{ color: '#E34F26' }} /> },  // CSS - Blue, HTML - Orange
+  { name: 'Angular', icon: <FaAngular className="text-6xl" style={{ color: '#DD1B16' }} /> }  // Angular - Red
 ];
 
 const Skills = () => {
