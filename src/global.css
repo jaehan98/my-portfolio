@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reusable styles */
+.nav-link {
+  @apply hover:text-yellow-400 transition-colors duration-200 ease-in-out;
+}
+
+.skill-card {
+  @apply p-4 bg-gray-100 rounded-lg transition-transform transform hover:scale-105 hover:bg-gray-200;
+}
+
+.project-card {
+  @apply block p-6 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl;
+}
