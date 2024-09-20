@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Keyframes for particle movement */
+/* Keyframes for slight diagonal particle movement */
 @keyframes particleMove {
   from {
-    transform: translateY(0);
+    transform: translateY(0) translateX(0);
     opacity: 1;
   }
   to {
-    transform: translateY(-100vh);
+    transform: translateY(-100vh) translateX(calc(-120px + 240px * var(--random-x)));
     opacity: 0;
   }
 }
@@ -20,18 +20,18 @@
   border-radius: 50%;
   opacity: 0.8;
   animation: particleMove linear infinite;
+  width: calc(8px + 6px * var(--random-size));
+  height: calc(8px + 6px * var(--random-size)); 
 }
 
+/* Light mode particles */
 .particle-light {
   background-color: rgba(50, 50, 50, 0.3);
-  width: 10px;
-  height: 10px;
 }
 
+/* Dark mode particles */
 .particle-dark {
   background-color: rgba(255, 255, 255, 0.1);
-  width: 10px;
-  height: 10px;
 }
 
 /* Light mode background gradient */
