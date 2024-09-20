@@ -1,7 +1,14 @@
 import React from 'react';
-import '../global.css';  // Import the global CSS with @apply
+import { FiSun, FiMoon } from 'react-icons/fi';
+import '../global.css';
 
-const Header = () => {
+// Define the props types
+interface HeaderProps {
+  toggleDarkMode: () => void;
+  darkMode: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ toggleDarkMode, darkMode }) => {
   return (
     <header className="bg-gray-800 text-white p-4">
       <nav className="container mx-auto flex justify-between items-center">
@@ -14,6 +21,13 @@ const Header = () => {
           <li><a href="#education" className="nav-link">Education</a></li>
           <li><a href="#footer" className="nav-link">Footer</a></li>
         </ul>
+
+        <button
+          onClick={toggleDarkMode}
+          className="ml-4 text-2xl focus:outline-none p-2 bg-gray-700 rounded-full hover:bg-gray-600 transition"
+        >
+          {darkMode ? <FiSun className="text-yellow-400" /> : <FiMoon />}
+        </button>
       </nav>
     </header>
   );

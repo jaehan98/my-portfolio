@@ -6,9 +6,9 @@ const Footer = () => {
       <h2 className="custom-heading text-white">Contact</h2>
       <p className="text-lg">Feel free to reach out via email or follow me on social media.</p>
       <ul className="mt-4">
-        <li>Email: <a href="mailto:jaehan98@gmail.com" className="text-blue-400 hover:underline">jaehan98@gmail.com</a></li>
+        <li>Email: <a href="mailto:jaehanloh@gmail.com" className="text-blue-400 hover:underline">jaehanloh@gmail.com</a></li>
         <li>GitHub: <a href="https://github.com/jaehan98" className="text-blue-400 hover:underline">github.com/jaehan98</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/jaehan" className="text-blue-400 hover:underline">linkedin.com/in/jaehan</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/jaehan-loh-093443151/" className="text-blue-400 hover:underline">linkedin.com/in/jaehan</a></li>
       </ul>
       <p className="mt-4">&copy; 2024 Jaehan's Portfolio. All rights reserved.</p>
     </footer>

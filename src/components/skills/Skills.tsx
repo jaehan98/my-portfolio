@@ -11,7 +11,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="container mx-auto py-10 px-4">
+    <section id="skills" className="text-center container mx-auto py-10 px-4">
       <h2 className="text-3xl font-bold mb-4">Skills</h2>
       <div className="flex flex-wrap gap-6 justify-center">
         {skillsData.map(skill => (
