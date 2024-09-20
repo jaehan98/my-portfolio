@@ -2,29 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reusable styles */
-.nav-link {
-  @apply hover:text-yellow-400 transition-colors duration-200 ease-in-out;
+/* Keyframes for particle movement */
+@keyframes particleMove {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
 }
 
-.skill-card {
-  @apply p-4 bg-gray-100 rounded-lg transition-transform transform hover:scale-105 hover:bg-gray-200;
+/* Particle styling */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: particleMove linear infinite;
 }
 
-.project-card {
-  @apply block p-6 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl;
+/* Darker particles for light mode */
+.particle-light {
+  background-color: rgba(50, 50, 50, 0.3);
+  width: 8px;
+  height: 8px;
+}
+
+/* Subtle particles for dark mode */
+.particle-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 12px;
+  height: 12px;
+}
+
+/* Light mode background gradient */
+.bg-light-mode {
+  background: linear-gradient(135deg, #EDEDED, #C0C0C0);  /* Light gray gradient */
+}
+
+/* Dark mode background gradient */
+.bg-dark-mode {
+  background: linear-gradient(135deg, #0A0A0A, #1A1A1A);  /* Very dark gradient */
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-/* Light mode (default) */
-body {
-  @apply bg-white text-gray-900;
-}
-
-/* Dark mode */
-html.dark body {
-  @apply bg-gray-900 text-gray-100;
 }

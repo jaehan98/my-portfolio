@@ -6,12 +6,12 @@ const HeroSection = () => {
   return (
     <div className="text-center space-y-6 px-4"> 
       <motion.h1
-        className="text-5xl font-bold mb-4"
+        className="text-6xl font-bold mb-4"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        Welcome to Jaehan's Portfolio
+        Jaehan Loh
       </motion.h1>
       <motion.p
         className="text-lg mb-6"
@@ -22,7 +22,7 @@ const HeroSection = () => {
         Full Stack Engineer with expertise in Frontend Development and Data Visualization.
       </motion.p>
       <div className="mt-8">  
-        <Button text="Explore My Work" href="#about" />
+        <Button text="Explore More" href="#about" />
       </div>
     </div>
   );

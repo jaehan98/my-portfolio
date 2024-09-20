@@ -8,7 +8,10 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ text, href, className }) => {
   return (
-    <a href={href} className={`bg-blue-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-400 transition-colors ${className}`}>
+    <a 
+      href={href} 
+      className={`bg-gray-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors ${className}`}
+    >
       {text}
     </a>
   );
