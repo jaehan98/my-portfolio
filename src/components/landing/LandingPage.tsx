@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from './HeroSection';
 
 const LandingPage = () => {
-  const particles = Array.from({ length: 100 });
+  const particles = Array.from({ length: 130 });
 
   return (
     <section 
